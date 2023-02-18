@@ -71,3 +71,11 @@ look good on small screens (display the links vertically instead of horizontally
         text-align: left;
     }
 }
+
+/* My Video Presentation */
+.myVideo {
+    position: fixed;
+    right: 0;
+    min-width: 100%;
+}
+
