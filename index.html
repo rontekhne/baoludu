@@ -4,43 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Baoludu</title>
 </head>
 <body onload="show();">
     <div id="logo" class="logo">
-        <img class="logoImage NO-CACHE" src="./img/baoludu-animation.gif" alt="Baoludu Logo">
+        <img class="logoImage NO-CACHE" src="./img/baoludu-animation.gif" alt="Baoludu Logo Animation">
     </div>
     <main id="content" style="display: none;">
         <nav class="navbar" id="mynavbar">
-            <a href="#" class="active">Logo</a>
+            <a href="#" class="active"><img src="./img/baoludu-logo.png" alt="Baoludu Logo" height="13"></a>
             <a href="#">Artigos</a>
             <a href="#">Contato</a>
             <a href="#">Sobre</a>
             <a href="javascript:void(0);" class="icon" onclick="doResponsiveNavbar()">=</i></a>
         </nav>
     
-        <header>
+        <header class="header_video">
             <video autoplay muted loop id="myVideo" width="100%">
                 <source src="./vid/huo.mp4" type="video/mp4">
-            </video> 
-            <button id="pauseVideo" onclick="doPauseVideo()">Parar vídeo</button>   
+            </video>
+            <!--button id="pauseVideo" onclick="doPauseVideo()">Parar vídeo</button-->   
         </header>
 
+        <!-- grid system -->
         <section>
-            <h1 class="header_title">Baoludu</h1>
-            <p></p>
+            <article>
+                <h3>Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                    deserunt mollit anim id est laborum.
+                </p>
+            </article>
+
+            <article>
+                <h3>Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                    deserunt mollit anim id est laborum.
+                </p>
+            </article>
         </section>
-
-        <article>
-            <h2 class="header_subtitle">Desenvolvimento de Jogos Independentes & Mais...</h2>
-            <p></p>
-        </article>
-
-        <aside>
-            <h3></h3>
-            <p></p>
-        </aside>
 
         <footer>
             <p></p>

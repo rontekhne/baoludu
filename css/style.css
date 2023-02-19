@@ -1,6 +1,34 @@
+/* colors:
+EB7EA2 - PINK
+F68F8B - ORANGE
+E0AF8F - BROWN
+F9DE8B - YELLOW
+84C48A - GREEN
+3A8DD7 - BLUE
+B847E1 - PURPLE
+
+THEME
+383C4A - DARK
+404552 - LIGHTER
+*/
+
 * {
     margin: 0;
 }
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #383C4A;
+    color: #FFF;
+}
+
+/*.logo {   
+    transition: opacity 1s;
+}
+
+.logo.hide {
+    opacity: 0;
+}*/
 
 .logoImage {
     margin-left: auto; 
@@ -15,7 +43,7 @@
 
 /* Add a background color to the top navigation */
 .navbar {
-    background-color: #000;
+    background-color: #383C4A;
     overflow: hidden;
 }
 
@@ -33,12 +61,12 @@
 /* Change the color of links on hover */
 .navbar a:hover {
     background-color: #FFF;
-    color: #000;
+    color: #383C4A;
 }
 
 /* Add an active class to highlight the current page */
 .navbar a.active {
-    background-color: #5B5B5B;
+    background-color: #383C4A;
     color: #FFF;
 }
 
@@ -46,8 +74,6 @@
 .navbar .icon {
     display: none;
 }
-
-
 
 /* media queries */
 
@@ -81,8 +107,42 @@ look good on small screens (display the links vertically instead of horizontally
 
 /* My Video Presentation */
 .myVideo {
-    position: fixed;
+    position: relative; /* fixwd */
     right: 0;
     min-width: 100%;
+    z-index: 0;
 }
 
+section {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+article {
+    flex: 50%;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    padding: 1em;
+    border-radius: 0.5em;
+    background-color: #404552;    
+}
+
+article h3 {
+    margin-bottom: 0.5em;
+}
+
+article p {
+    text-align: justify;
+}
+
+/* media query */
+/* Responsive layout - makes a one column-layout 
+instead of two-column layout */
+@media (max-width: 600px) {
+    section {
+      flex-direction: column;
+    }
+  }

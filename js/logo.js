@@ -1,30 +1,31 @@
-/*$(document).ready(function() {
-    let logo = `
-        <img 
-            src="./img/baoludu-animation.gif" 
-            alt="Baoludu Logo"
-            style="display:block; margin-left:auto; margin-right:auto"    
-        >
-    `;
-
-    document.getElementById("logo").innerHTML = logo;
-    $("#logo").fadeOut(200);
-    $("#mainPage").fadeIn(200);
-}); */
-
 function show()
 {
     document.getElementById("logo").style.display="block";
-    document.querySelector("body").style.backgroundColor = "#000";
     setTimeout("hide()", 6000);
-    fadeInPage();
+}
+
+function removeFadeOut( el, speed ) {
+    var seconds = speed/1000;
+    el.style.transition = "opacity "+seconds+"s ease";
+
+    el.style.opacity = 0;
+    setTimeout(function() {
+        el.parentNode.removeChild(el);
+    }, speed);
 }
 
 function hide()
 {
-    document.getElementById("logo").style.display="none";
+    logo = document.getElementById("logo");
+    //logo.classList.add("hide");
+    //logo.style.display = "none";
+    removeFadeOut(logo, 2000);
+    setTimeout("showMainPage()", 2000);
+}
+
+function showMainPage() 
+{
     document.getElementById("content").style.display="block";
-    document.querySelector("body").style.backgroundColor = "#FFF";
 }
 
 function nocache() {
@@ -33,5 +34,4 @@ function nocache() {
         nods[i].attributes['src'].value += "?a=" + Math.random();
     }
 }
-
 nocache();
