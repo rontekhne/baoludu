@@ -60,8 +60,8 @@ body {
 
 /* Change the color of links on hover */
 .navbar a:hover {
-    background-color: #FFF;
-    color: #383C4A;
+    background-color: #404552;
+    color: #FFF;
 }
 
 /* Add an active class to highlight the current page */
