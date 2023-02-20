@@ -146,4 +146,19 @@ instead of two-column layout */
     section {
       flex-direction: column;
     }
-  }
+}
+
+/* footer */
+footer {
+    padding: 5em;
+    left: 0;
+    bottom: 0;
+    background-color: #404552;
+    color: #FFF;
+    text-align: center;
+}
+
+.copyleft {
+    display:inline-block;
+    transform: rotate(180deg);
+}
