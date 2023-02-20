@@ -115,6 +115,7 @@ look good on small screens (display the links vertically instead of horizontally
 }
 
 section {
+    margin-top: 2em;
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
@@ -151,6 +152,7 @@ instead of two-column layout */
 /* footer */
 footer {
     padding: 5em;
+    margin-top: 3em;
     left: 0;
     bottom: 0;
     background-color: #404552;
