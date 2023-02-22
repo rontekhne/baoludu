@@ -187,6 +187,16 @@ footer {
     text-align: center;
 }
 
+.footer_links {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 30px;
+}
+
+.footer_links i {
+    margin-top: 1em;
+}
+
 .copyleft {
     color: #FFF;
     display:inline-block;
