@@ -221,3 +221,8 @@ footer {
     background-color: #404552;
     text-align: justify;
 }
+
+.disqus {
+    margin-right: 1em;
+    margin-left: 1em;
+}
