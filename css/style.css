@@ -232,6 +232,10 @@ footer {
     text-align: justify;
 }
 
+.post_paragraph {
+    padding: 0.5em;
+}
+
 .disqus {
     margin-right: 1em;
     margin-left: 1em;
